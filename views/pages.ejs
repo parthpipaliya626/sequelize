@@ -15,12 +15,14 @@
   <script>
 
 
-let str = "123";
-alert(typeof str); // string
+alert( Boolean(1) ); // true
+alert( Boolean(0) ); // false
 
-let num = Number(str); // becomes a number 123
+alert( Boolean("hello") ); // true
+alert( Boolean("") ); // false
 
-alert(typeof num); // number
+alert( Boolean("0") ); // true
+alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
 
 
 </script>
