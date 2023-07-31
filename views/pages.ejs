@@ -10,15 +10,16 @@
   <div class="jumbotron">
     <h1>This is great</h1>
     <p>Welcome to templating using EJS</p>
+    
   </div>
   <script>
-    let admin, name;
-      name = "John";
-       admin = name;
+ let name = "John";
 
-       alert(admin);
+// embed a variable
+alert( `Hello, ${name}!` ); // Hello, John!
 
-    
+// embed an expression
+alert( `the result is ${1 + 2}` ); // the result is 3
   </script>
 </main>
 
