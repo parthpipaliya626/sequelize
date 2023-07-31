@@ -1,29 +1,18 @@
 const express = require('express');
-
-const Sequelize = require('sequelize');
-
 const app = express();
 
-const sequelize = new Sequelize('sqlite:xchinook.db');
 
- const Playlist = sequelize.define('playlist', {
-    id: {
-        field: 'PlaylistId',
-        type: Sequelize.INTEGER,
-        primaryKey: true
-    },
-    name: {
-        field: 'Name',
-        type: 'Sequelize.STRING'
-    },
-}, {
-        timestamps: false
-    
-}); 
+app.set('view engine', 'ejs');
 
-app.get('/api/playlists', function(req, res) {
-    Playlist.findAll()
+
+
+app.get('/', function(req, res) {
+   res.render('index.ejs');
 });
+
+app.get('/about', function(req, res) {
+    res.render('pages');
+  });
 
 app.listen(8000, () => {
     console.log("Server is on PORT: 8000");
