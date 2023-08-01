@@ -16,15 +16,16 @@
 
 
 
-let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
+let accessAllowed;
+let age = prompt('How old are you?', '');
 
-if(year < 2015) {
-  alert(' To early...' );
-} else if( year > 2015 ) {
-  alert(' Too late' );
+if (age > 18) {
+  accessAllowed = true;
 } else {
-  alert(' Exactly!');
+  accessAllowed = false;
 }
+
+alert(accessAllowed);
 
 
 
