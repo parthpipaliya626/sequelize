@@ -15,23 +15,19 @@
   <script>
 
 
-// outer variables
+function showMessage(from, text) {
 
-let userName = 'Parth';
+from = '*' + from + '*'; // make "from" look nicer
 
-function showMessage() {
-
-  let userName = "Raju";
-
-  let message = 'Hello, ' + userName;
-  alert(message);
+alert( from + ': ' + text );
 }
 
+let from = "Ann";
 
+showMessage(from, "Hello"); // *Ann*: Hello
 
-showMessage(); // Parth
-
-alert( userName );
+// the value of "from" is the same, the function modified a local copy
+alert( from ); // Ann
 
 
 </script>
