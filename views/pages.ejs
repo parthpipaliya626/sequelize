@@ -15,22 +15,23 @@
   <script>
 
 
-let a = 2 + 2;
+
+let a = 10;
 
 switch (a) {
-  case 3: 
-  alert(' to small ');
-  
   case 4:
-  alert(' Exactly! ');
-  
-  case 5:
-    alert(' Too big ');
- 
-    default:
-      alert(" I don't know such values ");
-}
+    alert('Right!');
+    break;
 
+    case 3:
+    case 5:
+      alert('Wrong!');
+      alert("Why don't you take a math class?");
+      break;
+
+      default:alert('The result is strange. Really.');
+
+}
 
 
 
