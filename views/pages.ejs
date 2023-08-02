@@ -16,20 +16,25 @@
 
 
 
-let a = 10;
+let arg = prompt("Enter a value?");
 
-switch (a) {
-  case 4:
-    alert('Right!');
+switch (arg) {
+  case '0':
+  case '1':
+    alert('One or zero');
     break;
 
-    case 3:
-    case 5:
-      alert('Wrong!');
-      alert("Why don't you take a math class?");
+    case '2':
+      alert( 'Two' );
       break;
 
-      default:alert('The result is strange. Really.');
+    case '3':
+      alert('Never executes!');
+      break;
+      
+
+      default:
+        alert('An unknown value');
 
 }
 
